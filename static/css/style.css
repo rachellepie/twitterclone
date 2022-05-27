@@ -1,0 +1,158 @@
+/*
+Common
+******************/
+
+.content{
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.header{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+.header img{
+    width: 58px;
+}
+.header h1{
+    padding-left: 25px;
+}
+
+
+/*
+Post
+*****************/
+
+.post_form {
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc
+}
+
+.post_form input {
+    width: 70%;
+    margin-bottom: 10px;
+    padding: 9px;
+    border: 1px solid #ccc
+}
+
+.post_form textarea {
+    width: 73%;
+    padding-bottom: 25px;
+    border: 1px solid #ccc;
+}
+#postbutton{
+    width: 20%;
+    border-radius: 20px;
+    background-color: rgb(29, 161, 242);
+    color: white;
+
+}
+#file{
+    width: 45%;
+    border: 0;
+    padding-top: 30px;
+}
+#cancel{
+    text-decoration: none;
+    background-color: darkgrey;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.posts ul {
+    padding: 0;
+}
+
+
+.posts li {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 17px 40px;
+    position: relative;
+}
+.post_forum form input{
+    margin-bottom: 2%;
+}
+
+
+.posts li .menu_icon{
+    width: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.posts li .menu{
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    display: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: aliceblue;
+
+
+}
+
+.posts li .logo {
+    flex-basis: 15%;
+}
+
+.posts li .logo img {
+    width: 50%;
+}
+
+.posts li .name_body {
+    flex-basis: 85%;
+}
+
+.posts li .name_body .name {
+    font-weight: bold;
+}
+
+.posts ul li .name_body .datetime {
+    color: gray;
+}
+
+.like a img{
+    width: 20px;
+}
+.button{
+    display: inline;
+}
+
+.picture{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .posts li .name_body .name {
+        font-size: 20px;
+    }
+    #cancel{
+        padding: 8px 6px;
+    }
+    #postbutton{
+        width: 22%;
+
+    }
+}
+@media screen and (max-width: 280px) {
+    .button{
+        display: revert;
+    }   
+    #postbutton{
+        width: 34%;
+    }
+
+}
